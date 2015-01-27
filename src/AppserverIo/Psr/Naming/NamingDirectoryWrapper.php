@@ -11,14 +11,11 @@
  *
  * PHP version 5
  *
- * @category   Appserver
- * @package    Psr
- * @subpackage Naming
- * @author     Tim Wagner <tw@appserver.io>
- * @copyright  2014 TechDivision GmbH <info@appserver.io>
- * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link       https://github.com/appserver-io-psr/naming
- * @link       http://www.appserver.io
+ * @author    Tim Wagner <tw@appserver.io>
+ * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      https://github.com/appserver-io-psr/naming
+ * @link      http://www.appserver.io
  */
 
 namespace AppserverIo\Psr\Naming;
@@ -26,14 +23,11 @@ namespace AppserverIo\Psr\Naming;
 /**
  * A naming directory wrapper implementation.
  *
- * @category   Appserver
- * @package    Psr
- * @subpackage Naming
- * @author     Tim Wagner <tw@appserver.io>
- * @copyright  2014 TechDivision GmbH <info@appserver.io>
- * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link       https://github.com/appserver-io-psr/naming
- * @link       http://www.appserver.io
+ * @author    Tim Wagner <tw@appserver.io>
+ * @copyright 2015 TechDivision GmbH <info@appserver.io>
+ * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link      https://github.com/appserver-io-psr/naming
+ * @link      http://www.appserver.io
  */
 class NamingDirectoryWrapper
 {
@@ -48,7 +42,7 @@ class NamingDirectoryWrapper
     /**
      * Injects the passed naming directory instance into this naming directory wrapper.
      *
-     * @param \AppserverIo\Psr\Naming\NamingDirectoryInterface $namingDirectory The namging directory instance used for initialization
+     * @param \AppserverIo\Psr\Naming\NamingDirectoryInterface $namingDirectory The naming directory instance used for initialization
      *
      * @return void
      */
@@ -60,7 +54,7 @@ class NamingDirectoryWrapper
     /**
      * Returns the naming directory instance.
      *
-     * @return \AppserverIo\Psr\Naming\NamingDirectoryInterface The naming diretory instance
+     * @return \AppserverIo\Psr\Naming\NamingDirectoryInterface The naming directory instance
      */
     public function getNamingDirectory()
     {
@@ -78,7 +72,7 @@ class NamingDirectoryWrapper
     }
 
     /**
-     * Returns the parend directory.
+     * Returns the parent directory.
      *
      * @return \AppserverIo\Psr\Naming\NamingDirectoryInterface
      */
@@ -129,7 +123,7 @@ class NamingDirectoryWrapper
 
     /**
      * Queries the naming directory for the requested name and returns the value
-     * or invokes the binded callback.
+     * or invokes the bound callback.
      *
      * @param string $name The name of the requested value
      * @param array  $args The arguments to pass to the callback
