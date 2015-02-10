@@ -5,12 +5,11 @@
 	"license" : "OSL-3.0",
 	"require" : {
 		"php" : ">=5.4.0",
-        "nikic/phlexy" : "0.1",
-        "appserver-io/rmi" : "0.6.*",
-        "appserver-io/properties" : "0.2.*",
-		"appserver-io-psr/context" : "0.5.*",
-        "appserver-io-psr/servlet" : "0.8.*",
-        "appserver-io-psr/application" : "0.5.*"
+		"nikic/phlexy" : "0.1",
+		"appserver-io/rmi" : "0.7.*",
+		"appserver-io/properties" : "0.2.*",
+		"appserver-io-psr/context" : "0.6.*",
+		"appserver-io-psr/servlet" : "0.8.*"
 	},
 	"require-dev" : {
 		"appserver-io/build" : "0.2.*"
@@ -36,11 +35,11 @@
 		}
 	},
 	"support" : {
-		"email" : "t.wagner@techdivision.com",
+		"email" : "tw@appserver.io",
 		"issues" : "https://github.com/appserver-io-psr/naming/issues",
 		"source" : "https://github.com/appserver-io-psr/naming"
 	},
 	"keywords" : [
-		"naming directory lookup"
+		"naming directory service lookup"
 	]
 }

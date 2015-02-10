@@ -1,3 +1,24 @@
+# Version 0.2.1
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Moving InitialContext, ResourceIdentifier + EnterpriseBeanResourceIdentifier classes from appserver-io/appserver package
+
+# Version 0.2.0
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Unified the interface naming conventions
+* Moved to new documentation schema
+
 # Version 0.1.8
 
 ## Bugfixes
