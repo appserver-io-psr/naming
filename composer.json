@@ -1,15 +1,19 @@
 {
 	"name" : "appserver-io-psr/naming",
-	"description" : "PSR, for naming service",
+	"description" : "PSR, providing the classes and interfaces for accessing naming services",
 	"homepage" : "https://github.com/appserver-io-psr/naming",
 	"license" : "OSL-3.0",
 	"require" : {
 		"php" : ">=5.4.0",
-		"appserver-io-psr/context" : "0.5.*"
+        "nikic/phlexy" : "0.1",
+        "appserver-io/rmi" : "0.6.*",
+        "appserver-io/properties" : "0.2.*",
+		"appserver-io-psr/context" : "0.5.*",
+        "appserver-io-psr/servlet" : "0.8.*",
+        "appserver-io-psr/application" : "0.5.*"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "3.7.*",
-		"appserver-io/build" : "0.1.*"
+		"appserver-io/build" : "0.2.*"
 	},
 	"autoload" : {
 		"psr-0" : {
