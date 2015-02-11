@@ -9,7 +9,8 @@
 		"appserver-io/rmi" : "0.7.*",
 		"appserver-io/properties" : "0.2.*",
 		"appserver-io-psr/context" : "0.6.*",
-		"appserver-io-psr/servlet" : "0.8.*"
+		"appserver-io-psr/servlet" : "0.8.*",
+        "appserver-io-psr/application" : "0.6.*"
 	},
 	"require-dev" : {
 		"appserver-io/build" : "0.2.*"
