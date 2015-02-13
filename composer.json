@@ -6,14 +6,14 @@
 	"require" : {
 		"php" : ">=5.4.0",
 		"nikic/phlexy" : "0.1",
-		"appserver-io/rmi" : "0.7.*",
-		"appserver-io/properties" : "0.2.*",
-		"appserver-io-psr/context" : "0.6.*",
-		"appserver-io-psr/servlet" : "0.8.*",
-        "appserver-io-psr/application" : "0.6.*"
+		"appserver-io/rmi" : "~1.0",
+		"appserver-io/properties" : "~1.0",
+		"appserver-io-psr/context" : "~1.0",
+		"appserver-io-psr/servlet" : "~1.0",
+		"appserver-io-psr/application" : "~1.0"
 	},
 	"require-dev" : {
-		"appserver-io/build" : "0.2.*"
+		"appserver-io/build" : "~1.0"
 	},
 	"autoload" : {
 		"psr-0" : {
