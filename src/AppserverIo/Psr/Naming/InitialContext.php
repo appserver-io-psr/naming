@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\InitialContext
+ * \AppserverIo\Psr\Naming\InitialContext
  *
  * NOTICE OF LICENSE
  *
@@ -240,6 +240,7 @@ class InitialContext
      * @param string $sessionId The session-ID, necessary for lookup stateful session beans
      *
      * @return object The requested enterprise bean instance
+     *
      * @throws \AppserverIo\Psr\Naming\NamingException Is thrown if we can't lookup the enterprise bean with the passed identifier
      */
     public function lookup($name, $sessionId = null)
@@ -279,7 +280,8 @@ class InitialContext
      *
      * @param string $resourceName The URL with the resource information
      *
-     * @return \AppserverIo\Appserver\Naming\ResourceIdentifier The initialized resource identifier
+     * @return \AppserverIo\Psr\Naming\EnterpriseBeanResourceIdentifier The initialized resource identifier
+     *
      * @throws \AppserverIo\Psr\Naming\NamingException Is thrown if we can't find the necessary application context
      */
     public function prepareResourceIdentifier($resourceName)
@@ -320,8 +322,8 @@ class InitialContext
     /**
      * Makes a remote lookup for the URL containing the information of the requested bean.
      *
-     * @param \AppserverIo\Appserver\Naming\ResourceIdentifier $resourceIdentifier The resource identifier with the requested bean information
-     * @param string                                           $sessionId          The session-ID, necessary for lookup stateful session beans
+     * @param \AppserverIo\Psr\Naming\ResourceIdentifier $resourceIdentifier The resource identifier with the requested bean information
+     * @param string                                     $sessionId          The session-ID, necessary for lookup stateful session beans
      *
      * @return object The been proxy instance
      */
@@ -357,8 +359,8 @@ class InitialContext
     /**
      * Makes a local lookup for the bean with the passed class name.
      *
-     * @param \AppserverIo\Appserver\Naming\ResourceIdentifier $resourceIdentifier The resource identifier with the requested bean information
-     * @param string                                           $sessionId          The session-ID, necessary for lookup stateful session beans
+     * @param \AppserverIo\Psr\Naming\ResourceIdentifier $resourceIdentifier The resource identifier with the requested bean information
+     * @param string                                     $sessionId          The session-ID, necessary for lookup stateful session beans
      *
      * @return object The bean proxy instance
      */
@@ -384,7 +386,7 @@ class InitialContext
      * Finally this method does the lookup for the passed resource identifier
      * using the also passed connection.
      *
-     * @param \AppserverIo\Appserver\Naming\ResourceIdentifier        $resourceIdentifier The identifier for the requested bean
+     * @param \AppserverIo\Psr\Naming\ResourceIdentifier              $resourceIdentifier The identifier for the requested bean
      * @param \AppserverIo\RemoteMethodInvocation\ConnectionInterface $connection         The connection we use for loading the bean
      * @param string                                                  $sessionId          The session-ID, necessary for lookup stateful session beans
      *

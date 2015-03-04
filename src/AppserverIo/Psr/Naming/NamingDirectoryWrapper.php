@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\NamingDirectoryWrapper
+ * \AppserverIo\Psr\Naming\NamingDirectoryWrapper
  *
  * NOTICE OF LICENSE
  *

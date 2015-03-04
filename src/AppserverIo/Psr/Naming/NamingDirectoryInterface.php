@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\NamingDirectoryInterface
+ * \AppserverIo\Psr\Naming\NamingDirectoryInterface
  *
  * NOTICE OF LICENSE
  *
@@ -42,7 +42,7 @@ interface NamingDirectoryInterface extends ContextInterface
     public function getName();
 
     /**
-     * Returns the parend directory.
+     * Returns the parent directory.
      *
      * @return \AppserverIo\Psr\Naming\NamingDirectoryInterface
      */
@@ -81,7 +81,7 @@ interface NamingDirectoryInterface extends ContextInterface
 
     /**
      * Queries the naming directory for the requested name and returns the value
-     * or invokes the binded callback.
+     * or invokes the bound callback.
      *
      * @param string $name The name of the requested value
      * @param array  $args The arguments to pass to the callback

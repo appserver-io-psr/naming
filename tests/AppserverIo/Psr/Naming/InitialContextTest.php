@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Appserver\Naming\InitialContextTest
+ * \AppserverIo\Appserver\Naming\InitialContextTest
  *
  * NOTICE OF LICENSE
  *

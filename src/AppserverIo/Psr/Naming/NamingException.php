@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\NamingException
+ * \AppserverIo\Psr\Naming\NamingException
  *
  * NOTICE OF LICENSE
  *
