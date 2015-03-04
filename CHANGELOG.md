@@ -1,3 +1,13 @@
+# Version 1.0.1
+
+## Bugfixes
+
+* Fixed some minor comment glitches
+
+## Features
+
+* None
+
 # Version 1.0.0
 
 ## Bugfixes
@@ -7,7 +17,6 @@
 ## Features
 
 * Switched to stable dependencies due to version 1.0.0 release
-
 
 # Version 0.2.1
 
