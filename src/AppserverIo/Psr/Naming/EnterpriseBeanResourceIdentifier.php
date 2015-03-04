@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\EnterpriseBeanResourceIdentifier
+ * \AppserverIo\Psr\Naming\EnterpriseBeanResourceIdentifier
  *
  * NOTICE OF LICENSE
  *
@@ -242,7 +242,7 @@ class EnterpriseBeanResourceIdentifier extends ResourceIdentifier
      *
      * @param \AppserverIo\Properties\PropertiesInterface $properties The configuration properties
      *
-     * @return \AppserverIo\Appserver\Naming\EnterpriseBeanResourceIdentifier The initialized instance
+     * @return \AppserverIo\Psr\Naming\EnterpriseBeanResourceIdentifier The initialized instance
      */
     public static function createFromProperties(PropertiesInterface $properties)
     {

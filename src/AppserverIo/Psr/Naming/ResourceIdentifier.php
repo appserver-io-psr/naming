@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\ResourceIdentifier
+ * \AppserverIo\Psr\Naming\ResourceIdentifier
  *
  * NOTICE OF LICENSE
  *
@@ -329,7 +329,7 @@ class ResourceIdentifier
      *
      * @param \AppserverIo\Properties\PropertiesInterface $properties The configuration properties
      *
-     * @return \AppserverIo\Appserver\Naming\ResourceIdentifier The initialized instance
+     * @return \AppserverIo\Psr\Naming\ResourceIdentifier The initialized instance
      */
     public static function createFromProperties(PropertiesInterface $properties)
     {

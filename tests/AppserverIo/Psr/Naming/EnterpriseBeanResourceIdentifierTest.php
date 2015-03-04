@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Psr\Naming\EnterpriseBeanResourceIdentifierTest
+ * \AppserverIo\Psr\Naming\EnterpriseBeanResourceIdentifierTest
  *
  * NOTICE OF LICENSE
  *

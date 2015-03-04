@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AppserverIo\Appserver\Naming\ResourceIdentifierTest
+ * \AppserverIo\Appserver\Naming\ResourceIdentifierTest
  *
  * NOTICE OF LICENSE
  *
