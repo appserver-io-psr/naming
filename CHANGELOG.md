@@ -1,3 +1,13 @@
+# Version 1.0.2
+
+## Bugfixes
+
+* Refactoring session initialization to allow late binding necessary necessary for starting/querying session within the same request
+
+## Features
+
+* None
+
 # Version 1.0.1
 
 ## Bugfixes

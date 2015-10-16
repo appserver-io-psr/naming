@@ -395,20 +395,22 @@ class InitialContext
     protected function doLookup(ResourceIdentifier $resourceIdentifier, ConnectionInterface $connection, $sessionId = null)
     {
 
-        // initialize the session
+        // initialize the context session
         $session = $connection->createContextSession();
 
-        // check if we've a HTTP session-ID
-        if ($sessionId == null && $this->getServletRequest() && $servletSession = $this->getServletRequest()->getSession()) {
-            $sessionId = $servletSession->getId(); // if yes, use it for connecting to the stateful session bean
-        } elseif ($sessionId == null) {
-            $sessionId = SessionUtils::generateRandomString(); // simulate a unique session-ID
+        // check if we've a HTTP session ID passed
+        if ($sessionId == null) {
+            // simulate a unique session ID
+            $session->setSessionId(SessionUtils::generateRandomString());
         } else {
-            // do nothing, because a session-ID has been passed
+            // else, set the passed session ID
+            $session->setSessionId($sessionId);
         }
 
-        // set the HTTP session-ID
-        $session->setSessionId($sessionId);
+        // check if we've a HTTP servlet request that may contain a session
+        if ($servletRequest = $this->getServletRequest()) {
+            $session->injectServletRequest($servletRequest);
+        }
 
         // load the class name from the resource identifier => that is the path information
         $className = $resourceIdentifier->getClassName();
