@@ -6,7 +6,7 @@
 	"require" : {
 		"php" : ">=5.4.0",
 		"nikic/phlexy" : "0.1",
-		"appserver-io/rmi" : "~1.0",
+		"appserver-io/rmi" : "~2.0",
 		"appserver-io/properties" : "~1.0",
 		"appserver-io-psr/context" : "~1.0",
 		"appserver-io-psr/servlet" : "~1.0",
