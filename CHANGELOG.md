@@ -1,3 +1,13 @@
+# Version 1.0.5
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Switch to latest appserver-io/rmi version
+
 # Version 1.0.4
 
 ## Bugfixes
