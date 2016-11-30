@@ -9,7 +9,7 @@
 		"appserver-io/rmi" : "~3.0",
 		"appserver-io/properties" : "~2.0",
 		"appserver-io-psr/context" : "~1.0",
-		"appserver-io-psr/servlet" : "~1.0",
+		"appserver-io-psr/servlet" : "~2.0",
 		"appserver-io-psr/application" : "~1.0"
 	},
 	"require-dev" : {
