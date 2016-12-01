@@ -1,3 +1,13 @@
+# Version 1.0.7
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Switch to latest appserver-io-psr/servlet version 3.0.0
+
 # Version 1.0.6
 
 ## Bugfixes
@@ -6,7 +16,7 @@
 
 ## Features
 
-* Switch to latest appserver-io-psr/servlet version
+* Switch to latest appserver-io-psr/servlet version 2.0.0
 
 # Version 1.0.5
 
