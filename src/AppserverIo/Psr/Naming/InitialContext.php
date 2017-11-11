@@ -395,27 +395,38 @@ class InitialContext
     protected function doLookup(ResourceIdentifier $resourceIdentifier, ConnectionInterface $connection, $sessionId = null)
     {
 
-        // initialize the context session
-        $session = $connection->createContextSession();
+        try {
+            // initialize the context session
+            $session = $connection->createContextSession();
 
-        // check if we've a HTTP session ID passed
-        if ($sessionId == null) {
-            // simulate a unique session ID
-            $session->setSessionId(SessionUtils::generateRandomString());
-        } else {
-            // else, set the passed session ID
-            $session->setSessionId($sessionId);
+            // check if we've a HTTP session ID passed
+            if ($sessionId == null) {
+                // simulate a unique session ID
+                $session->setSessionId(SessionUtils::generateRandomString());
+            } else {
+                // else, set the passed session ID
+                $session->setSessionId($sessionId);
+            }
+
+            // check if we've a HTTP servlet request that may contain a session
+            if ($servletRequest = $this->getServletRequest()) {
+                $session->injectServletRequest($servletRequest);
+            }
+
+            // load the proxy class name from the resource identifier => that is the path information
+            $proxyClass = $this->getApplication()->search(sprintf('%s/proxy', $className = $resourceIdentifier->getClassName()));
+
+            // instanciate the proxy
+            $proxyInstance = new $proxyClass($className);
+            $proxyInstance->__setSession($session);
+
+            // return the initialized proxy instance
+            return $proxyInstance;
+
+        } catch (\Exception $e) {
+            // log and re-throw the exception
+            $this->getApplication()->getNamingDirectory()->search('php:global/log/System')->error($e->__toString());
+            throw $e;
         }
-
-        // check if we've a HTTP servlet request that may contain a session
-        if ($servletRequest = $this->getServletRequest()) {
-            $session->injectServletRequest($servletRequest);
-        }
-
-        // load the class name from the resource identifier => that is the path information
-        $className = $resourceIdentifier->getClassName();
-
-        // lookup and return the requested remote bean instance
-        return $session->createInitialContext()->lookup($className);
     }
 }
