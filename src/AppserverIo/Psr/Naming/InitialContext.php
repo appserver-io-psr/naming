@@ -414,7 +414,7 @@ class InitialContext
             }
 
             // load the proxy class name from the resource identifier => that is the path information
-            $proxyClass = $this->getApplication()->search(sprintf('%s/proxy', $className = $resourceIdentifier->getClassName()));
+            $proxyClass = $this->getApplication()->search(sprintf('%s/proxy', $className = $resourceIdentifier->getClassName()), array($sessionId));
 
             // instanciate the proxy
             $proxyInstance = new $proxyClass($className);
