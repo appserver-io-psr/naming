@@ -1,3 +1,14 @@
+# Version 1.1.0
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Wrap proxy generation into a try/catch block to make error handling more transparent
+* Switch to real proxy classes that implements the session bean's interfaces for more compatibility
+
 # Version 1.0.7
 
 ## Bugfixes
